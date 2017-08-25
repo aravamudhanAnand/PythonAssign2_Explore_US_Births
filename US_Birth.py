@@ -11,8 +11,7 @@ def read_csv(data):
     
     f= open(data,"r").read()
     string_list=f.split("\n")[1:]
-    
-    
+   
     for row in string_list:
         int_fields=[]
         string_fields= row.split(",")
@@ -72,6 +71,4 @@ cdc_dow_births = cal_counts(cdc_list,3)
 
 print(cdc_dow_births)
 
-
-print(cdc_month_births)
         
